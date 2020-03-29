@@ -9,6 +9,12 @@
   logix_project_id = <%= @logix_project_id %>;
   projectName = "<%= @projectName %>"
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js"></script>
+<script>
+Mousetrap.bind('ctrl+shift+y', function() { menuItemClicked(7); });
+Mousetrap.bind('ctrl+d', function() { clearProject(); });
+Mousetrap.bind('ctrl+m', function() { newCircuit(); });
+</script>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="/">CircuitVerse</a>
   <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="collapsedNavbar" aria-expanded="false" aria-label="Toggle navigation">
